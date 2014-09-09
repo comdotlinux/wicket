@@ -6,7 +6,6 @@ public class WicketApplication extends WebApplication {
 
 	@Override
 	public Class<SimplePage> getHomePage() {
-		// TODO Auto-generated method stub
 		return SimplePage.class;
 	}
 
