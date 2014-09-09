@@ -12,7 +12,6 @@ public class SimplePage extends WebPage {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 4798438529281935188L;
 
 	@SpringBean
 	private HelloService helloService;
