@@ -6,6 +6,25 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          metadata-complete="false">
 
+	<display-name>Wicket Web Application</display-name>
+	
+	<filter>
+			<filter-name>wicket.wicketTest</filter-name>
+			<filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
+			<init-param>
+				<param-name>applicationClassName</param-name>
+				<param-value>com.rhcloud.wicket.WicketApplication</param-value>
+			</init-param>
+		</filter>
+	 
+		<filter-mapping>
+			<filter-name>wicket.wicketTest</filter-name>
+			<url-pattern>/*</url-pattern>
+		</filter-mapping>
+	 
+		<listener>
+			<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+		</listener>
          
 </web-app>
 
