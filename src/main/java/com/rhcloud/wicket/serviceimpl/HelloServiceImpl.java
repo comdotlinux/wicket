@@ -9,7 +9,7 @@ public class HelloServiceImpl implements HelloService {
 
 	@Override
 	public String getMessage() {
-		return "String : Hello world";
+		return "String : Hello world from wicket";
 	}
 
 }
